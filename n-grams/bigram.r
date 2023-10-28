@@ -27,5 +27,5 @@ bigram_freq <- data.frame(
   freq = c(bigram_freq$freq)
 )
 
-write_xlsx(bigram_data, "dataframe\bigram_data.xlsx")
-write_xlsx(bigram_freq, "dataframe\bigram_freq.xlsx")
+write_xlsx(bigram_data, "dataframe/bigram_data.xlsx")
+write_xlsx(bigram_freq, "dataframe/bigram_freq.xlsx")
