@@ -45,7 +45,7 @@ Carro está contido no conjunto de veículos, mas o contrário não é verdadeir
 
 A WordNet de Princeton pode ser acessada através do seguinte link: <https://wordnet.princeton.edu>. No site, para cada palavra há informações como glosa (definição informal do conceito expresso pelo synset), frases-exemplo (co-texto do item lexical de um synset) e frequência de ocorrência (para organização dos synsets).
 
-Em termos linguísticos, a WordNet é relevante pois apresenta um dicionário relevante de consulta e de representação do conhecimento conceitual-lexical, além de permitir a geração de produtos lexicográficos. Em termos tecnológicos em NLP, a WordNet é relevante, por exemplo, para aplicações de desambiguação lexical de sentido, perguntas e respostas, resolução de anáfora e recuperação e extração de informações.
+Em termos linguísticos, a WordNet é relevante pois apresenta um dicionário de consulta e de representação do conhecimento conceitual-lexical, além de permitir a geração de produtos lexicográficos. Em termos tecnológicos em NLP, a WordNet é relevante, por exemplo, para aplicações de desambiguação lexical de sentido, perguntas e respostas, resolução de anáfora e recuperação e extração de informações.
 
 ## Desambiguação Lexical de Sentido (WSD)
 A desambiguação lexical de sentido (WSD, do inglês Word Sense Disambiguation), é um processo em NLP que, diante um texto de input sob análise, identifica o sentido correto de uma palavra polissêmica.
