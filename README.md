@@ -81,4 +81,9 @@ A delimitação do conhecimento a ser extraído inclui a categoria gramatical, a
 - Bigrama (2-grama) se trata de duas sequências de caracteres delimitadas por espaços em branco - como 'mesa lateral' e 'braço mecânico'.
 - Trigrama (3-grama) se trata de três sequências de caracteres delimitadas por espaços em branco - como 'bola de futebol' e 'mesa de centro'.
 
-A extração do conhecimento léxico-conceitual é realizada de modo semiautomático, utilizando diferentes métodos. Para a extração de unigramas, uso o parser UD-Pipe (portuguese-bosque-ud-2.10-220711), disponível online em: <https://lindat.mff.cuni.cz/services/udpipe/>. O motivo dessa escolha está no fato de que, para a detecção e extração de unigramas, são necessárias certas informações linguísticas, como categoria sintática e classe de palavra, que são apresentadas no tagging/parsing. O UD-Pipe, então, fornece as informações necessárias para a extração do conhecimento léxico-conceitual. 
+A extração do conhecimento léxico-conceitual é realizada de modo semiautomático, utilizando diferentes métodos. Para a extração de unigramas, uso o parser UDPipe (portuguese-bosque-ud-2.10-220711), disponível online em: <https://lindat.mff.cuni.cz/services/udpipe/>. O motivo dessa escolha está no fato de que, para a detecção e extração de unigramas, são necessárias certas informações linguísticas, como categoria sintática e classe de palavra, que são apresentadas no tagging/parsing. O UD-Pipe, então, fornece as informações necessárias para a extração do conhecimento léxico-conceitual.
+
+Para a extração dos bigramas e trigramas, uso o concordancer UDConcord (v1.0.0), disponível online em: <https://udconcord.icmc.usp.br>. O UDConcord funciona em termos de concordância sintática no processamento de dados linguísticos, fornecendo as informações necessárias para a extração de bigramas e trigramas a partir da concordância entre suas unidades lexicais.
+
+## Fase representacional
+Após a extração do conhecimento léxico-conceitual, 
