@@ -75,7 +75,7 @@ Para a seleção do tipo de fonte, há dois tipos possíveis, que são as fontes
 
 O corpora selecionado é um texto único retirado do site do Consulado Geral do Japão em São Paulo, disponível em: <https://www.sp.br.emb-japan.go.jp/itprtop_pt/index.html>. O tratamento da fonte também é realizado manualmente, apesar de existirem ferramentas que automatizam o processo de tratamento de texto.
 
-A delimitação do conhecimento a ser extraído inclui a categoria gramatical, a relação semântica de sinonímia e a relação semântica de hiponínima dos tokens selecionados. Para esse projeto, a unidade de categoria escolhida é a dos nomes (NOUN), contendo o intervalo de tamanho dessas unidades de unigrama para trigrama.
+A delimitação do conhecimento a ser extraído inclui a categoria gramatical, a relação semântica de sinonímia e a relação semântica de hiponínima dos tokens selecionados. Para esse projeto, a unidade gramatical escolhida é a dos nomes (NOUN), contendo o intervalo de tamanho dessas unidades de unigrama para trigrama.
 
 - Unigrama (1-grama) se trata de uma sequência de caracteres delimitada por espaços em branco - como 'casa' e 'sapato.
 - Bigrama (2-grama) se trata de duas sequências de caracteres delimitadas por espaços em branco - como 'mesa lateral' e 'braço mecânico'.
