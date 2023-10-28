@@ -26,5 +26,5 @@ unigram_freq <- data.frame(
   freq = c(unigram_freq$freq)
 )
 
-write_xlsx(unigram_data, "C:\\Users\\User1\\Documents\\unigram_data.xlsx")
-write_xlsx(unigram_freq, "C:\\Users\\User1\\Documents\\unigram_freq.xlsx")
+write_xlsx(unigram_data, "dataframe/unigram_data.xlsx")
+write_xlsx(unigram_freq, "dataframe/unigram_freq.xlsx")
