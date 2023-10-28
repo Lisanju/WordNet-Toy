@@ -27,9 +27,33 @@ A WordNet é, essencialmente, composta por:
 
 Os synsets são construídos a partir da relação de sentido semântico de sinonímia. Por definição, uma expressão linguística é sinônima de outra caso a alteração de uma por outra num mesmo contexto linguístico não altera o valor de verdade da sentença. Por exemplo:
 
-Uma bike é uma bicicleta - Verdadeiro.
+'Uma bike é uma bicicleta' - Verdadeiro.
 
-Uma bicicleta é uma bike - Verdadeiro.
+'Uma bicicleta é uma bike' - Verdadeiro.
 
-As expressões bike e bicicleta são sinônimas e, portanto, compõem o mesmo synset.
+As expressões bike e bicicleta são sinônimas e, portanto, compõem um mesmo synset.
 
+Há diferentes relações de sentido que um synset pode estabelecer com outro, como antonímia, hiponímia, meronímia, acarretamento, troponímia e causa. Para os interesses deste projeto, utilizo apenas as relações de sinonímia (para estabelecer os synsets) e de hiponímia (para subordinação e superordenação de synsets).
+
+Em termos semânticos, uma expressão A é hipônima de B se e somente se A está contido em B e B não está contido em A. Por exemplo:
+
+'Um carro é um tipo de veículo' - Verdadeiro.
+
+'Um veículo é um tipo de carro' - Falso.
+
+Carro está contido no conjunto de veículos, mas o contrário não é verdadeiro. Neste caso, dizemos que carro é hipônimo de veículo e que veículo é hiperônimo de carro.
+
+A WordNet de Princeton pode ser acessada através do seguinte link: <https://wordnet.princeton.edu>. No site, para cada palavra há informações como glosa (definição informal do conceito expresso pelo synset), frases-exemplo (co-texto do item lexical de um synset) e frequência de ocorrência (para organização dos synsets).
+
+Em termos linguísticos, a WordNet é relevante pois apresenta um dicionário relevante de consulta e de representação do conhecimento conceitual-lexical, além de permitir a geração de produtos lexicográficos. Em termos tecnológicos em NLP, a WordNet é relevante, por exemplo, para aplicações de desambiguação lexical de sentido, perguntas e respostas, resolução de anáfora e recuperação e extração de informações.
+
+## Desambiguação Lexical de Sentido (WSD)
+A desambiguação lexical de sentido (WSD, do inglês Word Sense Disambiguation), é um processo em NLP que, diante um texto de input sob análise, identifica o sentido correto de uma palavra polissêmica.
+
+Imagine que em um texto os tokens 'bass' e 'organ' ocorrem e são identificados como NOUN pela sua estrutura sintática. A aplicação de WSD consulta a WordNet e busca pelos synsets NOUN em que esses tokens aparecem. No caso, o token 'organ' aparece em 6 synsets e 'bass' em 8 synsets. A aplicação WSD, então, recupera a hierarquia de todos os synsets que os tokens 'organ' e 'bass' aparecem. Depois disso, ela cruza todas as hierarquias de synsets e busca por similaridades entre elas, como representado a seguir:
+
+- token 'organ': {entity} <- {physical entity} <- {object, physical object} <- {whole, unit} <- {artifact, artefact} <- {instumentality, instrumentation} <- **{musical instrument, instrument}** <- {electronic instrument, electronic musical instrument} <- {electric organ, electronic organ, Hammond organ, organ}
+
+- token 'bass': {entity} <- {physical entity} <- {object, physical object} <- {whole, unit} <- {artifact, artefact} <- {instumentality, instrumentation} <- **{musical instrument, instrument}** <- {bass}
+
+Entre as diferentes hierarquias de synsets, a aplicação WSD selecionou as duas hierarquias acima, visto que em ambas é identificado o sentido de instrumento musical, sendo, portanto, as hierarquias mais prováveis de estarem corretas para a desambiguação de sentido lexical dos tokens 'bass' e 'organ' que ocorrem num mesmo texto.
