@@ -57,3 +57,27 @@ Imagine que em um texto os tokens 'bass' e 'organ' ocorrem e são identificados 
 - token 'bass': {entity} <- {physical entity} <- {object, physical object} <- {whole, unit} <- {artifact, artefact} <- {instumentality, instrumentation} <- **{musical instrument, instrument}** <- {bass}
 
 Entre as diferentes hierarquias de synsets, a aplicação WSD selecionou as duas hierarquias acima, visto que em ambas é identificado o sentido de instrumento musical, sendo, portanto, as hierarquias mais prováveis de estarem corretas para a desambiguação de sentido lexical dos tokens 'bass' e 'organ' que ocorrem num mesmo texto.
+
+# Metodologia para a construção da WordNet-Toy
+
+## Fase linguística
+A fase linguística na construção de uma WordNet consiste no levantamento de estratégias humanas de sumarização de texto, incluindo etapas como:
+
+- Seleção do tipo de fonte;
+
+- Tratamento da fonte;
+
+- Delimitação do conhecimento a extrair;
+
+- Extração do conhecimento léxico-conceitual.
+
+Para a seleção do tipo de fonte, há dois tipos possíveis, que são as fontes estruturadas e as fontes não-estruturadas. As fontes estruturadas incluem dicionários impressos ou digitais e databases ou wordnets, enquanto as fontes não-estruturadas incluem corpora. Para este projeto, utilizo uma fonte não-estruturada, valendo-me de um corpora selecionado.
+
+O corpora selecionado é um texto único retirado do site do Consulado Geral do Japão em São Paulo, disponível em: <https://www.sp.br.emb-japan.go.jp/itprtop_pt/index.html>. O tratamento da fonte também é realizado manualmente, apesar de existirem ferramentas que automatizam o processo de tratamento de texto.
+
+A delimitação do conhecimento a ser extraído inclui a categoria gramatical, a relação semântica de sinonímia e a relação semântica de hiponínima dos tokens selecionados. Para esse projeto, a unidade de categoria escolhida é a dos nomes (NOUN), contendo o intervalo de tamanho dessas unidades de unigrama para trigrama.
+
+Unigrama (1-grama) se trata de uma sequência de caracteres delimitada por espaços em branco - como 'casa' e 'sapato.
+Bigrama (2-grama) se trata de duas sequências de caracteres delimitadas por espaços em branco - como 'mesa lateral' e 'braço mecânico'.
+Trigrama (3-grama) se trata de três sequências de caracteres delimitadas por espaços em branco - como 'bola de futebol' e 'mesa de centro'.
+
