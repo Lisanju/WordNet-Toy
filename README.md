@@ -77,7 +77,8 @@ O corpora selecionado é um texto único retirado do site do Consulado Geral do 
 
 A delimitação do conhecimento a ser extraído inclui a categoria gramatical, a relação semântica de sinonímia e a relação semântica de hiponínima dos tokens selecionados. Para esse projeto, a unidade de categoria escolhida é a dos nomes (NOUN), contendo o intervalo de tamanho dessas unidades de unigrama para trigrama.
 
-Unigrama (1-grama) se trata de uma sequência de caracteres delimitada por espaços em branco - como 'casa' e 'sapato.
-Bigrama (2-grama) se trata de duas sequências de caracteres delimitadas por espaços em branco - como 'mesa lateral' e 'braço mecânico'.
-Trigrama (3-grama) se trata de três sequências de caracteres delimitadas por espaços em branco - como 'bola de futebol' e 'mesa de centro'.
+- Unigrama (1-grama) se trata de uma sequência de caracteres delimitada por espaços em branco - como 'casa' e 'sapato.
+- Bigrama (2-grama) se trata de duas sequências de caracteres delimitadas por espaços em branco - como 'mesa lateral' e 'braço mecânico'.
+- Trigrama (3-grama) se trata de três sequências de caracteres delimitadas por espaços em branco - como 'bola de futebol' e 'mesa de centro'.
 
+A extração do conhecimento léxico-conceitual é realizada de modo semiautomático, utilizando diferentes métodos. Para a extração de unigramas, uso o parser UD-Pipe (portuguese-bosque-ud-2.10-220711), disponível online em: <https://lindat.mff.cuni.cz/services/udpipe/>. O motivo dessa escolha está no fato de que, para a detecção e extração de unigramas, são necessárias certas informações linguísticas, como categoria sintática e classe de palavra, que são apresentadas no tagging/parsing. O UD-Pipe, então, fornece as informações necessárias para a extração do conhecimento léxico-conceitual. 
