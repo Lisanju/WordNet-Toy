@@ -22,7 +22,7 @@ unigram_data <- data.frame(
 unigram_freq <- txt_freq(x = unigram$lemma)
 
 unigram_freq <- data.frame(
-  token = c(unigram_freq$key),
+  lemma = c(unigram_freq$key),
   freq = c(unigram_freq$freq)
 )
 
