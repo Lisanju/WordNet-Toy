@@ -92,7 +92,7 @@ A extração dos unigramas resultou em duas tabelas no formato .xlsx, uma conten
 A extração dos bigramas e trigramas também resultou em duas tabelas no formato .xlsx, contendo as mesmas informações que as tabelas de unigramas. No entanto, para a extração dos bigramas, foi necessário buscar pela sequência de tokens de classe gramatical NOUN e ADJ, e, para a extração dos trigramas, pela sequência de tokens de classe gramatical NOUN ADP NOUN. A justificativa pela busca dessas sequências de classes gramaticais está no fato de que, no português brasileiro, essas são as estruturas mais produtivas de bigramas e trigramas.
 
 ## Fase representacional
-Após a extração do conhecimento léxico-conceitual, entramos na fase representacional da construção da WordNet-Toy, que consiste em etapas como:
+Após a extração do conhecimento léxico-conceitual, entramos na fase representacional da construção da WordNet-Toy, que consiste na representação do conhecimento extraído para o formato WordNet, contendo etapas como:
 
 - Identificação das sinonímias;
   
@@ -113,3 +113,16 @@ As expressões indicativas são pistas linguísticas presentes no corpus que ide
 Por exemplo, para a expressão indicativa "ou", a ideia é que o termo que aparece lineramente antes dela é sinônimo do termo que aparece depois. (Hatchback ou hatch -> são sinônimos).
 
 
+A estratégia que utiliza das variações linguísticas para identificar sinonímias se vale de diferentes tipos de variações:
+
+- Variação Ortográfica (por grafia, como "porta malas" e "porta-malas");
+
+- Variação Paradigmática (por paradigma lexical, como "assento" e "banco");
+
+- Variação Sintática (por estrutura sintática, como "";
+
+- Variação por Siglagem.
+
+## Fase Implementacional
+
+Por fim, a fase implementacional consiste na codificação do conhecimento formalizado em uma base de dados (isto é, um objeto computacional).
