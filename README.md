@@ -96,7 +96,9 @@ Após a extração do conhecimento léxico-conceitual, entramos na fase represen
 
 - Identificação das sinonímias;
   
-- Construção dos synsets.
+- Construção dos synsets;
+
+- Construção das hierárquias de synsets.
 
 Para identificar as sinonímias a partir do material tratado na fase linguística, é possível utilizar diferentes estratégias:
 
@@ -131,6 +133,18 @@ Após as estratégias usadas para encontrar sinonímias, colocamos as expressõe
 ![image](https://github.com/Lisanju/WordNet-Toy/assets/106002045/0b2f8ed4-bbe2-415c-913b-216e3687790d)
 
 Os synsets são construídos com os sinônimos separados por vírgulas e endentados por chaves. -> { área, espaço, capacidade }
+
+Com os synsets preparados, a próxima etapa da fase representacional é a construção das hierarquias de synsets. Para isso, é possível construir as hierarquias através de um método top-down ou bottom-up (sendo a diferença entre esses métodos a orientação em que a hierarquia é construída e como a informação contida nela é lida -> de cima para baixo ou de baixo para cima). Para este projeto, uso o método bottom-up.
+
+As relações semânticas responsáveis pela construção das hierarquias de synsests são a hiponímia e a hiperonímia. Em termos simples, dizemos que um dado conjunto A é hiperônimo de um conjunto B caso A contenha B. E, por outro lado, um conjunto B é hipônimo de A caso B esteja contido em A.
+
+Por exemplo, {carro} é hiperônimo de {hatchback}, assim como {hatchback} é hipônimo de {carro}.
+
+A hierarquia, então, é construída a partir dessas relações semânticas. Os hiperônimos são colocados graficamente acima de seus hipônimos, até que a hierarquia alcance um hiperônimo que inclua todos os synsets extraídos. O hiperônimo que aparece no topo da hierarquia é o hiperônimo mais genérico, responsável por representar todas as entidades denotadas pelos synsets extraídos.
+
+Por outro lado, os hipônimos que aparecem na base da hierarquias denotam conceitos mais específicos dentre os synsets coletados.
+
+Para auxiliar na classificação de hiperônimos e hipônimos entre os synsets extraídos, uso o site WordNet Search (v3.1), disponível em: <http://wordnetweb.princeton.edu/perl/webwn>. Ele contém um banco de dados de hierarquias já montadas por outros linguistas.
 
 ## Fase Implementacional
 
