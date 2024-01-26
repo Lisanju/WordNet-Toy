@@ -153,3 +153,7 @@ Para manter a hierarquia construída a partir dos synsets salvas temporariamente
 ## Fase Implementacional
 
 Por fim, a fase implementacional consiste na codificação do conhecimento formalizado em uma base de dados (isto é, um objeto computacional).
+
+Para codificar o conhecimento em uma base de dados, usei o editor de ontologias Web Protégé (v4.0.2), disponível em <https://webprotege.stanford.edu/>. A ontologia implementada no Protégé pode ser exportada nos formatos XML, OWL, Turtle, e RDF. Desse modo, o glossário conceitual WordNet-Toy construído pode ser utilizado como base de dados para diferentes tarefas computacionais envolvendo o processamento de linguagem natural.
+
+![image](https://github.com/Lisanju/WordNet-Toy/assets/106002045/f0d70670-adc2-4c4c-bf4c-4b8eab51dbd2)
