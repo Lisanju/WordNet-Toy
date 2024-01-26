@@ -146,6 +146,10 @@ Por outro lado, os hipônimos que aparecem na base da hierarquias denotam concei
 
 Para auxiliar na classificação de hiperônimos e hipônimos entre os synsets extraídos, uso o site WordNet Search (v3.1), disponível em: <http://wordnetweb.princeton.edu/perl/webwn>. Ele contém um banco de dados de hierarquias já montadas por outros linguistas.
 
+Para manter a hierarquia construída a partir dos synsets salvas temporariamente, armazenei ela em uma planilha:
+
+![image](https://github.com/Lisanju/WordNet-Toy/assets/106002045/3d948ba3-fad9-4cb3-8bf2-f42c6d24ecf9)
+
 ## Fase Implementacional
 
 Por fim, a fase implementacional consiste na codificação do conhecimento formalizado em uma base de dados (isto é, um objeto computacional).
