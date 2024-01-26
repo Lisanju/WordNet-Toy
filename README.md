@@ -112,16 +112,17 @@ As expressões indicativas são pistas linguísticas presentes no corpus que ide
 
 Por exemplo, para a expressão indicativa "ou", a ideia é que o termo que aparece lineramente antes dela é sinônimo do termo que aparece depois. (Hatchback ou hatch -> são sinônimos).
 
-
 A estratégia que utiliza das variações linguísticas para identificar sinonímias se vale de diferentes tipos de variações:
 
 - Variação Ortográfica (por grafia, como "porta malas" e "porta-malas");
 
 - Variação Paradigmática (por paradigma lexical, como "assento" e "banco");
 
-- Variação Sintática (por estrutura sintática, como "";
+- Variação Sintática (por equivalência de estrutura sintática, como "exame de sangue" e "exame sanguíneo");
 
-- Variação por Siglagem.
+- Variação por Siglagem (por redução em siglas, como "educação à distância" e "EaD").
+
+
 
 ## Fase Implementacional
 
