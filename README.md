@@ -126,6 +126,12 @@ A estratégia de domínio de conhecimento considera informações epistêmicas s
 
 Jã a estratégia de synsets isolados consiste em reunir as expressões linguísticas do corpus que não possuem sinônimos e, para cada uma delas, criar um synset próprio.
 
+Após as estratégias usadas para encontrar sinonímias, colocamos as expressões e as estratégias em uma tabela e construímos synsets a partir dos resultados obtidos, como ilustrado na imagem a seguir:
+
+![image](https://github.com/Lisanju/WordNet-Toy/assets/106002045/0b2f8ed4-bbe2-415c-913b-216e3687790d)
+
+Os synsets são construídos com os sinônimos separados por vírgulas e endentados por chaves. -> { área, espaço, capacidade }
+
 ## Fase Implementacional
 
 Por fim, a fase implementacional consiste na codificação do conhecimento formalizado em uma base de dados (isto é, um objeto computacional).
