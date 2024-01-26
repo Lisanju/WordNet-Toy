@@ -122,7 +122,9 @@ A estratégia que utiliza das variações linguísticas para identificar sinoní
 
 - Variação por Siglagem (por redução em siglas, como "educação à distância" e "EaD").
 
+A estratégia de domínio de conhecimento considera informações epistêmicas sobre o mundo para a identificação de sinônimos. Por exemplo, a partir de nosso conhecimento de mundo, sabemos que "carroceria principal" e "cabine" são sinônimos.
 
+Jã a estratégia de synsets isolados consiste em reunir as expressões linguísticas do corpus que não possuem sinônimos e, para cada uma delas, criar um synset próprio.
 
 ## Fase Implementacional
 
