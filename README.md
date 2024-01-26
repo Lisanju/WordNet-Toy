@@ -92,4 +92,24 @@ A extração dos unigramas resultou em duas tabelas no formato .xlsx, uma conten
 A extração dos bigramas e trigramas também resultou em duas tabelas no formato .xlsx, contendo as mesmas informações que as tabelas de unigramas. No entanto, para a extração dos bigramas, foi necessário buscar pela sequência de tokens de classe gramatical NOUN e ADJ, e, para a extração dos trigramas, pela sequência de tokens de classe gramatical NOUN ADP NOUN. A justificativa pela busca dessas sequências de classes gramaticais está no fato de que, no português brasileiro, essas são as estruturas mais produtivas de bigramas e trigramas.
 
 ## Fase representacional
-Após a extração do conhecimento léxico-conceitual, 
+Após a extração do conhecimento léxico-conceitual, entramos na fase representacional da construção da WordNet-Toy, que consiste em etapas como:
+
+- Identificação das sinonímias;
+  
+- Construção dos synsets.
+
+Para identificar as sinonímias a partir do material tratado na fase linguística, é possível utilizar diferentes estratégias:
+
+- Expressão Indicativa;
+
+- Variação Linguística;
+
+- Domínio de Conhecimento;
+
+- Synsets Isolados.
+
+As expressões indicativas são pistas linguísticas presentes no corpus que identificam sinônimos. Essas pistas são expressas como: outra palavra para, conhecido como, isto é, ou seja, ou, parênteses.
+
+Por exemplo, para a expressão indicativa "ou", a ideia é que o termo que aparece lineramente antes dela é sinônimo do termo que aparece depois. (Hatchback ou hatch -> são sinônimos).
+
+
