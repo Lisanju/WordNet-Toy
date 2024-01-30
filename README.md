@@ -1,5 +1,5 @@
 # WordNet-Toy
-A proposta deste repositório é estudar o papel do Léxico no Processamento de Linguagem Natural (NLP), isso através da construção semiautomática de um glossário WordNet-Toy em português brasileiro com foco nos traços semânticos de relação de sentidos.
+A proposta deste repositório é estudar o papel do Léxico no Processamento de Linguagem Natural (NLP), isso através da construção semiautomática de um glossário WordNet-Toy em português brasileiro com foco nos traços semânticos de relação de sentidos. Projeto feito para a disciplina 'Laboratório 6 - PLN' no curso de Linguística - UFSCar.
 
 ## O Léxico
 Todo sistema de NLP precisa de um Léxico, pois ele fornece informações de diferentes naturezas linguísticas:
