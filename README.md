@@ -150,7 +150,7 @@ Para manter a hierarquia construída a partir dos synsets salvas temporariamente
 
 ![image](https://github.com/Lisanju/WordNet-Toy/assets/106002045/3d948ba3-fad9-4cb3-8bf2-f42c6d24ecf9)
 
-## Fase Implementacional
+## Fase implementacional
 
 Por fim, a fase implementacional consiste na codificação do conhecimento formalizado em uma base de dados (isto é, um objeto computacional).
 
